@@ -1,8 +1,24 @@
-public class Rodent extends Animal {
-    private boolean hasSharpTeeth;
-    private boolean canDigHoles;
+public class Dog extends Animal {
+    private boolean isDomestic;
+    private boolean canBark;
 
-    public Rodent(String name, int age, String color, double weight, boolean alive) {
-        super(name, age, color, weight, alive);
+    public Dog(String name, int age) {
+        super(name, age);
+    }
+
+    public boolean isDomestic() {
+        return isDomestic;
+    }
+
+    public void setDomestic(boolean domestic) {
+        isDomestic = domestic;
+    }
+
+    public boolean isCanBark() {
+        return canBark;
+    }
+
+    public void setCanBark(boolean canBark) {
+        this.canBark = canBark;
     }
 }

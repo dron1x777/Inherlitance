@@ -1,14 +1,10 @@
-public class Parent {
+public class Animal {
     private String name;
     private int age;
-    private String color;
-    private double weight;
-    private boolean alive;
-    public Parent(String name, int age, String color, double weight, boolean alive) {
+
+    public Animal(String name, int age) {
         this.name = name;
         this.age = age;
-        this.color = color;
-        this.weight = weight;
     }
 
     public String getName() {
@@ -27,33 +23,10 @@ public class Parent {
         this.age = age;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public boolean isAlive() {
-        return alive;
-    }
-
-    public void setAlive(boolean alive) {
-        this.alive = alive;
-    }
     public void eat(){
-        System.out.println("Animal is eating");
+        System.out.println(name + " is eating");
     }
     public void sleep(){
-        System.out.println("Animal is sleeping");
+        System.out.println(name + " is sleeping");
     }
 }
