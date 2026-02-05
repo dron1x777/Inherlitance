@@ -1,17 +1,26 @@
 
 public class Main {
     public static void main(String[] args) {
-        Technique technique = new Technique("technique", 13.05, "XBOX");
-        System.out.println(technique);
-        System.out.println(technique.turnOnOff("false"));
-        SmartWatch smartWatch = new SmartWatch("SmartWatch", 5.04, "i dont know", true);
-        System.out.println(smartWatch);
-        System.out.println(smartWatch.turnOnOff("true"));
-        Phone phone = new Phone("phone", 16, "Iphone", 354874388);
-        System.out.println(phone);
-        System.out.println(phone.turnOnOff("y5gtv4rc3"));
-        Computer computer = new Computer("computer", 12.5, "ACER", true);
-        System.out.println(computer);
-        System.out.println(computer.turnOnOff("123"));
+        Chat chat = new Chat("a", 3, "blue");
+        System.out.println(chat);
+        chat.getChatName();
+        chat.getIsNewChat();
+        Slack slack = new Slack("b", 6, "balck", true, true);
+        System.out.println(slack);
+        slack.getChatName();
+        slack.getIsNewChat();
+        Whatsapp whatsapp = new Whatsapp("c", 4, "green", 345, true);
+        System.out.println(whatsapp);
+        whatsapp.getChatName();
+        whatsapp.getIsNewChat();
+        Instagram instagram = new Instagram("d", 8765, "yellow", 45, 65);
+        System.out.println(instagram);
+        instagram.getChatName();
+        instagram.getIsNewChat();
+        Telegram telegram = new Telegram("e", 3, "purple", 654, 'M');
+        System.out.println(telegram);
+        telegram.getChatName();
+        telegram.getIsNewChat();
+
     }
 }
