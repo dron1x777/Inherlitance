@@ -1,11 +1,17 @@
 
 public class Main {
     public static void main(String[] args) {
-        Mother mother = new Mother("Somebody", 37, "green");
-        System.out.println(mother.getNamed());
-        System.out.println(mother);
-        Daughter daughter = new Daughter("somebody123", 14, "black", 168.5, "white");
-        System.out.println(daughter.getNamed());
-        System.out.println(daughter);
+        Technique technique = new Technique("technique", 13.05, "XBOX");
+        System.out.println(technique);
+        System.out.println(technique.turnOnOff("false"));
+        SmartWatch smartWatch = new SmartWatch("SmartWatch", 5.04, "i dont know", true);
+        System.out.println(smartWatch);
+        System.out.println(smartWatch.turnOnOff("true"));
+        Phone phone = new Phone("phone", 16, "Iphone", 354874388);
+        System.out.println(phone);
+        System.out.println(phone.turnOnOff("y5gtv4rc3"));
+        Computer computer = new Computer("computer", 12.5, "ACER", true);
+        System.out.println(computer);
+        System.out.println(computer.turnOnOff("123"));
     }
 }
