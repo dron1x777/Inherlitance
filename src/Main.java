@@ -1,26 +1,16 @@
 
 public class Main {
     public static void main(String[] args) {
-        Chat chat = new Chat("a", 3, "blue");
-        System.out.println(chat);
-        chat.getChatName();
-        chat.getIsNewChat();
-        Slack slack = new Slack("b", 6, "balck", true, true);
-        System.out.println(slack);
-        slack.getChatName();
-        slack.getIsNewChat();
-        Whatsapp whatsapp = new Whatsapp("c", 4, "green", 345, true);
-        System.out.println(whatsapp);
-        whatsapp.getChatName();
-        whatsapp.getIsNewChat();
-        Instagram instagram = new Instagram("d", 8765, "yellow", 45, 65);
-        System.out.println(instagram);
-        instagram.getChatName();
-        instagram.getIsNewChat();
-        Telegram telegram = new Telegram("e", 3, "purple", 654, 'M');
-        System.out.println(telegram);
-        telegram.getChatName();
-        telegram.getIsNewChat();
-
+        Company company = new Company("Nigga",6);
+        Manager manager = new Manager("Somebody1", 3456, 200, 100);
+        Manager manager2 = new Manager("Somebody2", 3456, 200, 200);
+        Developer developer = new Developer("somebody3", 1234, 23456, "JAVA");
+        Developer developer2 = new Developer("somebody4", 1234, 34456, "JAVA");
+        company.addEmployee(developer);
+        company.addEmployee(developer2);
+        company.addEmployee(manager);
+        company.addEmployee(manager2);
+        company.printAllEmployees();
+        company.printOnlyDevelopers();
     }
 }
