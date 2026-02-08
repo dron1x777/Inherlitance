@@ -15,7 +15,10 @@ public class Developer extends Employee {
     }
 
     @Override
-    String printInfo() {
-        return "Employee Name: " + getName() + ", ID: " + getId() + ", Salary: " + getSalary() + ", programming language: " + programmingLanguage;
+    public void printInfo() {
+        System.out.println("Developer | ID: " + getId() +
+                ", Name: " + getName() +
+                ", Salary: " + getSalary() +
+                ", Language: " + programmingLanguage);
     }
 }

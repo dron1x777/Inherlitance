@@ -12,5 +12,6 @@ public class Main {
         company.addEmployee(manager2);
         company.printAllEmployees();
         company.printOnlyDevelopers();
+
     }
 }

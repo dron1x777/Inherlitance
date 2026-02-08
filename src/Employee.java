@@ -33,8 +33,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    String printInfo() {
-        return "Employee Name: " + name + ", ID: " + id + ", Salary: " + salary;
+    public void printInfo() {
+        System.out.println(
+                "ID: " + id +
+                        ", Name: " + name +
+                        ", Salary: " + salary);
     }
 
     String increaseSalary(double percent) {

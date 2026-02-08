@@ -15,7 +15,9 @@ public class Manager extends Employee {
     }
 
     @Override
-    String printInfo() {
-        return "Employee Name: " + getName() + ", ID: " + getId() + ", Salary + bonus: " + getSalary() + bonus;
+    public void printInfo() {
+        System.out.println("Manager | ID: " + getId() +
+                ", Name: " + getName() +
+                ", Total salary: " + (getSalary() + bonus));
     }
 }
