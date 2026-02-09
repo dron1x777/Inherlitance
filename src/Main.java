@@ -1,10 +1,11 @@
 
 public class Main {
     public static void main(String[] args) {
-        Employee employee = new Employee("John Doe");
-        System.out.println(Employee.companyName);
-        Employee employee2 = new Employee("John Dnfd");
-        System.out.println(Employee.companyName);
-        System.out.println(employee);
+        BankAccount bankAccount = new BankAccount("fgdhj", 200);
+        System.out.println(bankAccount.deposit(500));
+        System.out.println(bankAccount.withdraw(4321));
+        BankAccount bankAccount2 = new BankAccount("fgdhj", 200);
+        BankAccount bankAccount3 = new BankAccount("fgdhj", 200);
+        System.out.println(BankAccount.printAccounts());
     }
 }
