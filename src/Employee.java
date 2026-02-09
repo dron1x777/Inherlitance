@@ -1,48 +1,9 @@
 public class Employee {
-   private String name;
-   private int id;
-   private double salary;
+    String name;
+    static String companyName="gfgfgf";
 
-   public  Employee(String name, int id, double salary) {
-       this.name = name;
-       this.id = id;
-       this.salary = salary;
-   }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Employee(String name) {
         this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public void printInfo() {
-        System.out.println(
-                "ID: " + id +
-                        ", Name: " + name +
-                        ", Salary: " + salary);
-    }
-
-    String increaseSalary(double percent) {
-       salary = salary + (salary * percent / 100);
-       return "Employee Name: " + name + ", ID: " + id + ", Salary: " + salary;
     }
 
 }
