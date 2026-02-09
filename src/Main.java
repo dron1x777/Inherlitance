@@ -1,12 +1,14 @@
 
 public class Main {
     public static void main(String[] args) {
-        Country country = new Country("Kyrgyzstan", 6135226, 4564, "Kyrgyz");
-        Country country1 = new Country("Kazahstan", 14536273, 28464, "Kazah");
-        Country country2 = new Country("Tadjikistan", 5564733, 3455, "Tadjik");
-        int[] km = {country1.getKm(), country2.getKm(), country.getKm()};
-        String[] name = {country1.getName(), country2.getName(), country.getName()};
-        System.out.println(Country.getMax(km, name));
+        Book book1 = new Book("Book 1");
+        Book book2 = new Book("Book 2");
+        Book book3 = new Book("Book 3");
+        Book book4 = new Book("Book 4");
+        Book book5 = new Book("Book 5");
+        Book book6 = new Book("Book 6");
+        Book book7 = new Book("Book 7");
 
+        System.out.println(Book.getBookCount());
     }
 }
