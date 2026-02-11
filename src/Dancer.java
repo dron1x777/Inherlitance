@@ -1,8 +1,8 @@
 import java.time.LocalDate;
 
-public class Singer extends Person {
+public class Dancer extends Person {
     @Override
     public String walk() {
-        return "Singer is walking";
+        return "Dancer is walking";
     }
 }
